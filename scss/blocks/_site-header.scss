@@ -1,13 +1,15 @@
-.site-header {
-}
-
 .site-header__container {
-    padding-top: ;
-    padding-bottom: ;  
+    padding-top: 64px;
+    padding-bottom: 54px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-header__logo {
+    text-decoration: none;
 }
 
 .site-header__logo-img {
+    display: block;
 }
