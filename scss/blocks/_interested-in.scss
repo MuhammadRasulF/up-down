@@ -1,0 +1,63 @@
+.interested-in__container {
+    padding-top: 75px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interested-in__desc {
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-right: 32px;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+}
+
+.interested-in__hr {
+    width: 100%;
+    max-width: 534px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    margin-right: 32px;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    background-color: $font-color;
+}
+.interested-in__link {
+    width: 100%;
+    max-width: 162px;
+    text-decoration: none;
+    padding: 17px 30px 17px 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid $font-color;
+    color: $font-color;
+}
+
+@include breakpoint-down (860px) {
+    .interested-in__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interested-in__desc {
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+
+    .interested-in__hr {
+        display: none;
+        margin-right: 0;
+    }
+}

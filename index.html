@@ -16,7 +16,7 @@
       <a class="site-header__logo" href="index.html">
         <img class="site-header__logo-img" src="img/logo-header.svg" alt="logo" width="60" height="32">
       </a>
-      <nav class="site-nav">
+      <nav class="site-nav site-nav--active">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__item-link" href="index.html">Home</a>
@@ -29,51 +29,107 @@
           </li>
         </ul>
       </nav>
+      <button class="site-header__btn">
+        <img class="site-header__btn-img" src="img/button.svg" alt="button" width="25" height="25">
+      </button>
     </div>
   </header>
   
-  <!-- /*SITE_MAIN*/
+  <script>
+    const elBox = document.querySelector('site-nav')
+    const elBtn = document.querySelector('site-header__btn')
     
-    <main class="site-main">
-      <h1 class="visually-hidden">UP-Down</h1>
-      
-      /*FIRST_SECTION*/
-      
-      <section class="hero-section">
-        <div class="hero-section__container container">
-          
+    elBtn.addEventListener('click', () => {
+      elBox.classList.toggle('site-nav--active')
+    })
+  </script>
+  
+  <!-- SITE_MAIN -->
+  
+  <main class="site-main">
+    
+    <!-- FIRST_SECTION -->
+   
+    <section class="hero-section">
+      <h1 class="visually-hidden">Assalamu alaykum</h1>
+      <div class="hero-section__container container">
+        <div class="hero-section__content">
+          <p class="hero-section__title">Hey, I’m Alex Spencer and I love building beautiful websites</p>
+          <a class="hero-section__link" href="#">
+            <img class="hero-section__link-img" src="./img/about-me.svg" alt="svg" width="48" height="48">
+            <span class="hero-section__link-text">About me</span>
+          </a>
         </div>
-      </section>
-      
-      /*SECOND_SECTION*/
-      
-      <section class="person-section">
-        <div class="persn-section__container container">
-          <picture class="person-section__picture">
-            <img class="person-section__img" src="" srcset="" alt="" width="" height="">
-          </picture>
-          <p class="person-section__desc"></p>
-        </div>
-      </section>
-      
-    </main>
-    
-    /*SITE_FOOTER*/
-    
-    <footer class="site-footer">
-      <div class="site-footer__container container">
-        <a href="#" class="site-footer__logo">
-          <img class="site-footer__logo-img" src="" alt="" width="" height="">
-        </a>
-        <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__item-link" href="#"></a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </footer> -->
+    </section>
     
-  </body>
-  </html>
+    <!-- SECOND_SECTION -->
+    
+    <section class="about-me">
+      <div class="about-me__container container">
+        <picture class="about-me__picture">
+          <source srcset="img/persom@1x.jpg" type="image/jpg">
+          <img class="about-me__img" src="img/persom@1x.jpg" srcset="img/persom@1x.jpg 1x, img/persom@2x.jpg 2x" alt="person" width="540" height="600">
+        </picture>
+        <div class="about-me__content">
+          <h2 class="about-me__heading">About me</h2>
+          <p class="about-me__desc">I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
+          <a class="about-me__link" href="#">Go to portfolio</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- THIRD_SECTION -->
+
+    <section class="interesed-in">
+      <div class="interested-in__container container">
+        <h2 class="visually-hidden">Interest</h2>
+        <p class="interested-in__desc">Interested in doing a project together?</p>
+        <div class="interested-in__hr"></div>
+        <a class="interested-in__link" href="contact-me.html">Contact me</a>
+      </div>
+    </section>
+  </main>
+  
+  <!-- ITE_FOOTER -->
+  
+  <footer class="site-footer">
+    <div class="site-footer__container container">
+      <a href="#" class="site-footer__logo">
+        <img class="site-footer__logo-img" src="img/logo-footer.svg" alt="logo" width="60" height="32">
+      </a>
+      <nav class="site-footer__nav">
+        <ul class="site-footer__nav-list">
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="index.html">Home</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="contact-me.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="site-footer__list">
+        <li class="site-footer__item">
+          <a class="site-footer__item-link" href="#">
+            <img class="site-footer__item-img" src="img/git-hub.svg" alt="git-hub" width="25" height="24">
+          </a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__item-link" href="#">
+            <img class="site-footer__item-img" src="img/twitter.svg" alt="twitter" width="25" height="24">
+          </a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__item-link" href="#">
+            <img class="site-footer__item-img" src="img/in.svg" alt="in" width="25" height="24">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

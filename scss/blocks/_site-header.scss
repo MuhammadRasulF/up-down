@@ -13,3 +13,22 @@
 .site-header__logo-img {
     display: block;
 }
+
+.site-header__btn {
+    padding: 0;
+    display: none;
+    border: none;
+    background-color: $bg-color;
+}
+
+.site-header__btn-img {
+    display: block;
+}
+
+
+@include breakpoint-down(450px) {
+    
+    .site-header__btn {
+        display: block;
+    }
+}

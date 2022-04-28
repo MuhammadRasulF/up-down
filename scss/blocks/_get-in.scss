@@ -1,0 +1,48 @@
+.get-in__container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-top: 1px solid $font-color;  
+    border-bottom: 1px solid $font-color;  
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.get-in__heading {
+    margin: 0;
+    margin-right: 125px;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: $font-color;
+}
+
+.get-in__desc {
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 635px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.get-in__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.get-in__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.get-in__item-link {
+    text-decoration: none;
+}
+
+.get-in__item-img {
+    display: block;
+}

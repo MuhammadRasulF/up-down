@@ -1,0 +1,64 @@
+.about-me__container {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me__picture {
+    margin: 0;
+    margin-right: 125px;
+    flex-shrink: 0;
+}
+
+.about-me__content {
+    padding-top: 48px;
+    padding-bottom: 46px;
+    border-top:1px solid $font-color;
+    border-bottom:1px solid $font-color;
+    
+}
+
+.about-me__heading {
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: $font-color;
+}
+
+.about-me__desc {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.about-me__link {
+    text-decoration: none;
+    margin: 0;
+    padding: 17px 36px 17px 32px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid $font-color;
+}
+
+@include breakpoint-down (1000px) {
+    .about-me__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me__picture {
+        margin-right: 0px;
+    }
+
+    .about-me__picture {
+        margin-top: 8px;
+    }
+}

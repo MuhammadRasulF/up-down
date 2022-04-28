@@ -1,0 +1,129 @@
+.site-footer {
+    background-color: $font-color;
+}
+
+.site-footer__container {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.site-footer__logo {
+    margin: 0;
+    margin-right: 49px;
+}
+
+.site-footer__logo-img {
+    display: block;
+}
+
+.site-footer__nav {
+    margin-right: 615px;
+}
+
+.site-footer__nav-list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer__nav-item {
+  
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+}
+
+.site-footer__nav-link {
+    color: $font2-color;
+    text-decoration: none;
+}
+
+.site-footer__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.site-footer__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.site-footer__item-link {
+    text-decoration: none;
+}
+
+.site-footer__item-img {
+    display: block;
+}
+
+@include breakpoint-down (1150px) {
+    .site-footer__nav {
+        margin-right: 580px;
+    }
+}
+
+@include breakpoint-down (1115px) {
+    .site-footer__nav {
+        margin-right: 550px;
+    }
+}
+
+@include breakpoint-down (1085px) {
+    .site-footer__nav {
+        margin-right: 500px;
+    }
+}
+
+@include breakpoint-down (1035px) {
+    .site-footer__nav {
+        margin-right: 467px;
+    }
+}
+
+@include breakpoint-down (1005px) {
+    .site-footer__nav {
+        margin-right: 437px;
+    }
+}
+
+@include breakpoint-down (970px) {
+    .site-footer__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .site-footer__logo {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .site-footer__nav {
+        margin: 0;
+        margin-bottom: 42px;
+    }
+
+    .site-footer__nav-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-footer__nav-item {
+  
+        &:not(:last-child) {
+          margin-right: 0px;
+        }
+    }
+
+    .site-footer__list {
+        margin-left: 0px;
+    }
+
+}
+

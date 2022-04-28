@@ -5,10 +5,28 @@
   align-items: center;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 42px;
+.site-nav__item {
+  
+  &:not(:last-child) {
+    margin-right: 42px;
+  }
 }
-
+  
 .site-nav__item-link {
+  color: $font-color;
   text-decoration: none;
+    
+  &:hover {
+    color: $hover-color;
+  }
+}
+  
+.site-nav--active {
+  display: block;
+}
+  
+@include breakpoint-down(450px) {
+  .site-nav {
+    display: none;
+  }
 }

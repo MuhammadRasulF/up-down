@@ -1,0 +1,124 @@
+.hero-section {
+   padding-bottom: 75px;
+}
+
+.hero-section__container {
+   max-width: 1110px;
+   padding: 243px 665px 0 0;
+   background-image: url(../../img/hero-img@1x.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@include cssretina {
+   .hero-section__container {
+      background-image: url(../../img/hero-img@2x.png);
+   }
+}
+
+.hero-section__content {
+   position: relative;
+   background-color: $bg2-color;
+   padding: 56px 55px 53px 0;
+}
+
+.hero-section__title {
+   margin: 0;
+   margin-right: 0;
+   margin-bottom: 48px;
+   max-width: 390px;
+   font-family: $font2;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 50px;
+   letter-spacing: -0.446429px;
+}
+
+.hero-section__link {
+   text-align: center;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+.hero-section__link-img{
+   margin: 0;
+   padding: 0;
+   padding: 18px 16px;
+   background-color: $bg4-color;
+}
+
+.hero-section__link-text {
+   margin: 0;
+   padding: 0;
+   background-color: $bg3-color;
+   padding: 17px 25px 17px 25px;
+   font-size: 12px;
+   line-height: 14px;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: $font2-color;
+}
+
+@include breakpoint-down (1200px) {
+   .hero-section__container {
+      background-image: url(../../img/home-image-tablet@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   
+   .hero-section__container {
+      padding: 302px 293px 0 0;
+   }
+   
+   .hero-section__content {
+      max-width: 550px;
+   }
+   
+   .hero-section__title {
+      max-width: 550px;
+   }
+}
+
+@include breakpoint-down (840px) {
+   .hero-section__container {
+      padding: 350px 0 0 0;
+   }
+}
+
+@include breakpoint-down (780px) {
+   .hero-section__container {
+      padding: 350px 150px 0 0;
+   }
+
+   .hero-section__title {
+      font-size: 40px;
+      line-height: 42px;
+      letter-spacing: -0.357143px;
+   }
+
+}
+
+@include breakpoint-down (700px) {
+   .hero-section__container {
+      background-size: contain;
+      padding: 350px 0px 0 0;
+   }
+
+   .hero-section__content {
+      padding-right: 0;
+   }
+}
+
+@include breakpoint-down (400px) {
+   .hero-section__container {
+      padding-top: 280px;
+   }
+}
+   
