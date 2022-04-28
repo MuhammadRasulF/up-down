@@ -1,0 +1,16 @@
+.site-nav {
+}
+
+.site-nav__list {
+  @include list-unstyled;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-nav__item {
+}
+
+.site-nav__item-link {
+  text-decoration: none;
+}
