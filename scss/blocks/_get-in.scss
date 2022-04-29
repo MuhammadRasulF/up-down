@@ -9,6 +9,8 @@
 }
 
 .get-in__heading {
+    width: 100%;
+    max-width: 281px;
     margin: 0;
     margin-right: 125px;
     font-family: $font2;
@@ -46,3 +48,16 @@
 .get-in__item-img {
     display: block;
 }
+
+
+@include breakpoint-down (1070px) {
+        .get-in__container {  
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .get-in__heading {
+        margin-bottom: 24px;
+    }
+} 

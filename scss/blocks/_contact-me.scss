@@ -2,13 +2,15 @@
     padding-top: 48px;
     padding-bottom: 48px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: start;
 }
 
 .contact-me__heading {
+    width: 100%;
+    max-width: 281px;
     margin: 0;
-    margin-right: 100px;
+    margin-right: 125px;
     font-family: $font2;
     font-style: normal;
     font-weight: 700;
@@ -18,32 +20,79 @@
     color: $font-color;
 }
 
-.contact-me__wrapper {
-    margin: 0;
-    margin-bottom: 62px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+.contact-me__form {
+    max-width: 635px;
+    width: 100%;
 }
 
+.contact-me__wrapper {
+    max-width: 635px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact-me__label {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: $font-color;
+}
 
 .contact-me__input {
-    padding: 9px 524px 9px 13px;
+    max-width: 635px;
+    width: 100%;
+    background-color: $bg5-color;
+    color: $font-color;
+    border: none;
+    padding: 15px 16px;
+}
+
+.contact-me__input:focus {
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+.placeholder {
+    font-size: 13px;
+    line-height: 30px;
 }
 
 .contact-me__massage {
+    padding: 9px 16px;
     width: 635px;
     height: 96px;
+    background-color: $bg5-color;
+    border: none;
 }
+
+.contact-me__massage:focus {
+    outline: 0;
+    box-sizing: border-box;
+  }
 
 .contact-me__button {
     border:none;
     background-color: $font-color;
     padding:17px 24px;
-font-size: 12px;
-line-height: 14px;
-text-align: center;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: $font2-color;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $font2-color;
+}
+
+@include breakpoint-down(1070px) {
+    .contact-me__container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 }
