@@ -674,6 +674,7 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 1px solid #33323D;
+  color: #33323D;
 }
 
 @media only screen and (max-width: 1000px) {

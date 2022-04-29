@@ -45,6 +45,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 1px solid $font-color;
+    color: $font-color;
 }
 
 @include breakpoint-down (1000px) {
