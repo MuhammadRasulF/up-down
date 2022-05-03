@@ -9,29 +9,27 @@
 </head>
 <body>
     
-    <header class="site-header">
+    <header class="site-header site-header--active">
         <div class="site-header__container container">
-            <a class="site-header__logo" href="index.html">
-                <img class="site-header__logo-img" src="img/logo-header.svg" alt="logo" width="60" height="32">
-            </a>
-            <nav class="site-nav site-nav--active">
-                <ul class="site-nav__list">
-                    <li class="site-nav__item">
-                        <a class="site-nav__item-link" href="index.html">Home</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__item-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__item-link" href="contact-me.html">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="site-header__btn">
-                <img class="site-header__btn-img" src="img/button.svg" alt="button" width="25" height="25">
-            </button>
+          <a class="site-header__logo" href="index.html">
+            <img class="site-header__logo-img" src="img/logo-header.svg" alt="logo" width="60" height="32">
+          </a>
+          <nav class="site-header__nav site-nav site-nav--header">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__item-link" href="index.html">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__item-link" href="#">Portfolio</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__item-link site-nav__item-link--active" href="contact-me.html">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="site-header__btn js-nav-toggler" type="submit"></button>
         </div>
-    </header>
+      </header>
     
     <main class="site-main">
         <section class="get-in">
@@ -123,6 +121,15 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const elHeader = document.querySelector('.site-header')
+        const elNavToggler = document.querySelector('.js-nav-toggler')
+      
+      elNavToggler.addEventListener('click', function() {
+        elHeader.classList.toggle('site-header--active')
+      })
+      </script>
     
 </body>
 </html>

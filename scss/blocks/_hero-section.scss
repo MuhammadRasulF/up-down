@@ -44,6 +44,15 @@
    position: absolute;
    left: 0;
    bottom: 0;
+   transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color:  $bg4-color;
+        box-shadow: 0 0 5px $bg4-color,
+         0 0 20px $bg4-color,
+         0 0 50px $bg4-color;
+    }
 }
 
 .hero-section__link-img{

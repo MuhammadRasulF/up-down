@@ -46,6 +46,15 @@
     text-transform: uppercase;
     border: 1px solid $font-color;
     color: $font-color;
+    transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color:  $hover-color;
+        box-shadow: 0 0 5px $hover-color,
+         0 0 20px $hover-color,
+         0 0 50px $hover-color;
+    }
 }
 
 @include breakpoint-down (1000px) {

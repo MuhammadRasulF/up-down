@@ -2,7 +2,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
 }
 
@@ -57,7 +57,7 @@
 .contact-me__input:focus {
     outline: 0;
     box-sizing: border-box;
-  }
+}
 
 .placeholder {
     font-size: 13px;
@@ -66,16 +66,18 @@
 
 .contact-me__massage {
     padding: 9px 16px;
-    width: 635px;
+    width: 100%;
+    max-width: 635px;
     height: 96px;
     background-color: $bg5-color;
     border: none;
+    resize: none;
 }
 
 .contact-me__massage:focus {
     outline: 0;
     box-sizing: border-box;
-  }
+}
 
 .contact-me__button {
     border:none;
@@ -87,6 +89,13 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $font2-color;
+
+    &:hover {   
+    background-color: $font-color;
+    box-shadow: 0 0 5px $font-color,
+    0 0 20px $font-color,
+    0 0 40px $font-color;
+    }
 }
 
 @include breakpoint-down(1070px) {
@@ -95,10 +104,8 @@
         justify-content: start;
         align-items: start;
     }
-
+    
     .contact-me__massage {
         padding: 9px 16px;
-        width: 311px;
-        height: 96px;
     }
 }
